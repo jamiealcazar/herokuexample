@@ -1,7 +1,7 @@
 # Oh my Mycophile!
 
 *Mycophile (noun)*
-<p>A person who likes to eat/cook mushrooms, a mushroom enthusiast.
-<br>
+A person who likes to eat/cook mushrooms, a mushroom enthusiast.
+
 *Myco-*
-prefix pertaining to "mushroom, fungus" (see: mycologist, mycology, etc.)</p>
+prefix pertaining to "mushroom, fungus" (see: mycologist, mycology, etc.)
