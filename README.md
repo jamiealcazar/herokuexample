@@ -12,7 +12,7 @@
 <ol>
 <li>prefix pertaining to "mushroom, fungus"</li>
 </ol>
-*see: mycologist, mycology, mycophagy, etc.*
+*See: mycologist, mycology, mycophagy, etc.*
 
 
 In addition to their high nutritional value and commonplace usage in many loved cuisines around the world, mushrooms are more than just a fun guy (haha..). They are revered in many spiritual and medicinal contexts as well as the center of research by many scientists studying life and death cycles.
