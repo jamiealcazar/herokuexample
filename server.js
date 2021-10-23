@@ -2,9 +2,10 @@
 //Dependencies
 //___________________
 const express = require('express');
-const methodOverride  = require('method-override');
+// const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
 const app = express ();
+const Mushrooms = require('./models/mushrooms.js')
 const db = mongoose.connection;
 require('dotenv').config()
 //___________________
@@ -41,12 +42,79 @@ app.use(express.urlencoded({ extended: false }));// extended: false - does not a
 app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
 
 //use method override
-app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
+// app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 
 //___________________
 // Routes
 //___________________
+
+// Put
+
+
+
+// Edit
+
+
+
+
+// Delete
+
+
+
+// Post
+// app.post('/', (req, res) => {
+//   // console.log(req.body);
+//   const newMushroom = {
+//     name: req.body.name,
+//     description: req.body.description,
+//     img: req.body.img,
+//     location: req.body.location
+//     }
+//   // Pokemon.create(req.body, (error, createdPokemon) => {
+//   })
+//   Mushrooms.push(newMushroom);
+//   res.redirect('/');
+
+
+
+
+// Index
+app.get('/', (req, res) => {
+	  res.render(
+        'index.ejs',
+        {
+            data: Mushrooms
+        }
+    )
+})
+
+
+// New
+// new route
+// app.get('/new', (req, res) => {
+//   res.render(
+//     'new.ejs'
+//   )
+// })
+
+
+
+// Show
+app.get('/:id', (req, res) => {
+  // console.log("Mushrooms hehe", Mushrooms[req.params.id]);
+    res.render(
+        'show.ejs',
+        {
+            data: Mushrooms[req.params.id]
+        }
+    )
+})
+
+
+
+
+
 //localhost:3000
 app.get('/' , (req, res) => {
   res.send('Hello World!');
@@ -56,3 +124,5 @@ app.get('/' , (req, res) => {
 //Listener
 //___________________
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));
+
+module.exports = Mushrooms
