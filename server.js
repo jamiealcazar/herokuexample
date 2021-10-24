@@ -108,7 +108,7 @@ app.get('/mushrooms/:id', (req, res) => {
           mushrooms: Mushrooms[req.params.id]
         }
     )
-})
+});
 
 app.get('/recipes/:id', (req, res) => {
   res.render(
@@ -117,7 +117,7 @@ app.get('/recipes/:id', (req, res) => {
           recipes: Recipes[req.params.id]
       }
   )
-})
+});
 
 
 
