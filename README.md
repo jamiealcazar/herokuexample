@@ -1,5 +1,5 @@
 # Oh my Mycophile!
-
+<img width="418" alt="Screen Shot 2021-10-23 at 8 24 23 PM" src="https://user-images.githubusercontent.com/89334274/138579125-afe43c92-553a-4cbc-be2e-3d5c77b25b33.png">
 
 *"Nature alone is antique, and the oldest art a mushroom." -Thomas Carlyle*
 
