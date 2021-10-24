@@ -44,7 +44,7 @@ const mushrooms = [
   {
     name: 'Enokitake/Enoki',
     description:'Wild Enokitake have thick stems and a caramel hue. Cultivated enoki on the other hand (...also known as the See You Tomorrow mushroom) is an edible mushroom most notably used in Asian cuisine. Their stems are delicate, long, and stringy and have small, equally as delicate white caps. They are commonly stir fried, drenched in a corn starch mixture and flash fried, and sauteed in a mixture of sauces.',
-    img: "https://i.imgur.com/3cb41w6.png",
+    img: "https://i.imgur.com/qMime9a.png",
     location: 'Wild Enoki is found at the stumps of Chinese hackberry, ash, mulberry, and persimmon trees. Cultivated enoki you can find well...in the produce aisle of your nearest Asian grocery store.'
   },
   {
@@ -64,7 +64,7 @@ const mushrooms = [
     description:'This aptly named mushroom is fit for a king! This fungi has a thick cap and stem and is considered a superfood that helps with the regulation of cholesterol, aids in weight loss, supports bone health, and more recently linked to lowering risk for developing breast cancer! In plant-based recipes, it\'s stem is cut into circles to mimic scallops. It is neutral in flavor.',
     img: "https://i.imgur.com/2iJUJIu.png",
     location: 'Wild King Trumpets grow in cooler climates throughout the Middle East, Europe, and North Africa.'
-  },
+  }
 
 ]
 

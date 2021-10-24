@@ -5,7 +5,8 @@ const express = require('express');
 // const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
 const app = express ();
-const Mushrooms = require('./models/mushrooms.js')
+const Mushrooms = require('./models/mushrooms.js');
+const Recipes = require('./models/recipes.js');
 const db = mongoose.connection;
 require('dotenv').config()
 //___________________
@@ -71,20 +72,19 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 //     img: req.body.img,
 //     location: req.body.location
 //     }
-//   // Pokemon.create(req.body, (error, createdPokemon) => {
+//   // Mushrooms.create(req.body, (error, createdMushroom) => {
 //   })
 //   Mushrooms.push(newMushroom);
 //   res.redirect('/');
 
 
-
-
 // Index
-app.get('/', (req, res) => {
+app.get('/mushrooms', (req, res) => {
 	  res.render(
         'index.ejs',
         {
-            data: Mushrooms
+            allMushrooms: Mushrooms,
+            allRecipes: Recipes
         }
     )
 })
@@ -101,24 +101,30 @@ app.get('/', (req, res) => {
 
 
 // Show
-app.get('/:id', (req, res) => {
-  // console.log("Mushrooms hehe", Mushrooms[req.params.id]);
+app.get('/mushrooms/:id', (req, res) => {
     res.render(
-        'show.ejs',
+        './mushrooms_show.ejs',
         {
-            data: Mushrooms[req.params.id]
+          mushrooms: Mushrooms[req.params.id]
         }
     )
 })
 
-
+app.get('/recipes/:id', (req, res) => {
+  res.render(
+      './recipes_show.ejs',
+      {
+          recipes: Recipes[req.params.id]
+      }
+  )
+})
 
 
 
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
-});
+// app.get('/' , (req, res) => {
+//   res.send('Hello World!');
+// });
 
 //___________________
 //Listener
@@ -126,3 +132,4 @@ app.get('/' , (req, res) => {
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));
 
 module.exports = Mushrooms
+module.exports = Recipes
