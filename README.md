@@ -1,5 +1,5 @@
 # Oh my Mycophile!
-![mushroom poster] (https://imgur.com/o2bDgf7)
+
 
 *"Nature alone is antique, and the oldest art a mushroom." -Thomas Carlyle*
 
