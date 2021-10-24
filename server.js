@@ -2,11 +2,11 @@
 //Dependencies
 //___________________
 const express = require('express');
-// const methodOverride  = require('method-override');
+const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
 const app = express ();
-const Mushrooms = require('./models/mushrooms.js');
-const Recipes = require('./models/recipes.js');
+// const Mushrooms = require('./models/mushrooms.js');
+// const Recipes = require('./models/recipes.js');
 const db = mongoose.connection;
 require('dotenv').config()
 //___________________
@@ -43,93 +43,24 @@ app.use(express.urlencoded({ extended: false }));// extended: false - does not a
 app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
 
 //use method override
-// app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
+app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
-
-//___________________
-// Routes
-//___________________
-
-// Put
-
-
-
-// Edit
-
-
-
-
-// Delete
-
-
-
-// Post
-// app.post('/', (req, res) => {
-//   // console.log(req.body);
-//   const newMushroom = {
-//     name: req.body.name,
-//     description: req.body.description,
-//     img: req.body.img,
-//     location: req.body.location
-//     }
-//   // Mushrooms.create(req.body, (error, createdMushroom) => {
-//   })
-//   Mushrooms.push(newMushroom);
-//   res.redirect('/');
-
-
-// Index
-app.get('/mushrooms', (req, res) => {
-	  res.render(
-        'index.ejs',
-        {
-            allMushrooms: Mushrooms,
-            allRecipes: Recipes
-        }
-    )
-})
-
-
-// New
-// new route
-// app.get('/new', (req, res) => {
-//   res.render(
-//     'new.ejs'
-//   )
-// })
-
-
-
-// Show
-app.get('/mushrooms/:id', (req, res) => {
-    res.render(
-        './mushrooms_show.ejs',
-        {
-          mushrooms: Mushrooms[req.params.id]
-        }
-    )
-});
-
-app.get('/recipes/:id', (req, res) => {
-  res.render(
-      './recipes_show.ejs',
-      {
-          recipes: Recipes[req.params.id]
-      }
-  )
-});
+// Controllers
+const mushroomControllers = require('./controllers/mushrooms_controllers.js')
+app.use('/mushrooms', mushroomControllers)
 
 
 
 //localhost:3000
-// app.get('/' , (req, res) => {
-//   res.send('Hello World!');
-// });
+app.get('/' , (req, res) => {
+  // res.send('Hello World!');
+  res.redirect('/mushrooms')
+});
 
 //___________________
 //Listener
 //___________________
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));
 
-module.exports = Mushrooms
-module.exports = Recipes
+// module.exports = Mushrooms
+// module.exports = Recipes

@@ -20,4 +20,4 @@ In addition to their high nutritional value and commonplace usage in many loved 
 
 Today, modernized societies have advanced beyond our needs that we do not need to solely rely on hunting and gathering in order to sustain ourselves. However, the art of foraging is still a hobby and a way of life for many people around the world.
 
-Oh My Mycophile is a website designed to support the amateur mushroom forager by providing resources for safe mushroom foraging practices, common forageable mushrooms you can find in the wild, recipe suggestions for those different forageable mushrooms, and the historical contexts of mushrooms in food and ancient/modern day medicine.
+Oh My Mycophile is a website designed to support the amateur mushroom forager by providing resources for safe mushroom foraging practices, common forageable mushrooms you can find in the wild, recipe suggestions for those different forageable mushrooms, and the historical contexts of mushrooms in food and ancient/modern day medicine. 
