@@ -2,6 +2,7 @@
 const express = require('express')
 const router = express.Router()
 const Mushrooms = require('../models/mushrooms.js')
+const Recipes = require('../models/recipes.js');
 
 //
 // Routes
@@ -17,8 +18,8 @@ router.get('/:id/edit', (req, res) => {
     res.render(
       'mushrooms/edit.ejs',
       {
-        mushrooms: Mushrooms[req.params.id]
-        // index: req.params.id
+        mushrooms: Mushrooms[req.params.id],
+        index: req.params.id
       }
     )
   })
@@ -42,8 +43,8 @@ router.get('/', (req, res) => {
     res.render(
         'mushrooms/index.ejs',
         {
-            allMushrooms: Mushrooms
-            // allRecipes: Recipes
+            allMushrooms: Mushrooms,
+            allRecipes: Recipes
         }
     )
   })
@@ -64,19 +65,19 @@ router.get('/:id', (req, res) => {
     res.render(
         'mushrooms/mushrooms_show.ejs',
         {
-          mushrooms: Mushrooms[req.params.id]
+         mushrooms: Mushrooms[req.params.id]
         }
     )
-});
+})
 
-// router.get('/recipes/:id', (req, res) => {
-//   res.render(
-//       './recipes_show.ejs',
-//       {
-//           recipes: Recipes[req.params.id]
-//       }
-//   )
-// });
+router.get('/recipes/', (req, res) => {
+  res.render(
+      'mushrooms/recipes_show.ejs',
+      {
+       recipes: Recipes[req.params.id]
+      }
+    )
+})
 
 // Post
 router.post('/', (req, res) => {
