@@ -7,17 +7,24 @@
         background-image: url("https://i.imgur.com/TFpATze.png");
         text-align: center;
       }
+      h1 {
+        text-decoration: underline;
+        font-style: italic;
+      }
+      img {
+        border-radius: 40%
+      }
     </style>
     <title></title>
   </head>
   <body>
     <h1><span>An Amateur's Guide to Popularly Foraged Fungi</span><h1>
-    <a href="/mushrooms"><span>Back to Main Menu</span></a>
+    <h2><a href="/mushrooms"><span>Back to Main Menu</span></a></h2>
     <form class="" action="/mushrooms/<%=mushrooms.id%>?_method=DELETE" method="POST">
       <input type="submit" name="" value="DELETE">
     </form>
-    <a href="/mushrooms/:<%=mushrooms.id%>/edit">Edit Mushroom</a>
-    <h2><span><%=mushrooms.name%></span></h2>
+    <h3><a href="/mushrooms/:<%=mushrooms.id%>/edit">Edit Mushroom</a></h3>
+    <h1><span><%=mushrooms.name%></span></h1>
     <img src="<%=mushrooms.img%>"/>
     <h2><span>Description: <%=mushrooms.description%></span></h2>
     <h2><span>Location: <%=mushrooms.location%></span></h2>
