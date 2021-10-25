@@ -8,7 +8,7 @@ const mushrooms = [
   {
     name: 'Chicken of the Woods',
     description: 'The Chicken of the Woods is aptly named for its vibrant coloring similar to that of a rooster as well as its meaty taste. This mushroom is versatile and incredibly popular in the plant-based community where it is used as a substitute in recipes that call for chicken such as in pastas, soups, and stir frys. They grow to impressive widths in clustered units called "shelves" as they naturally grow in stacks on top of one another.',
-    img: "https://i.imgur.com/lMWqQrN.png",
+    img: "https://i.imgur.com/VASsXvA.png",
     location: 'Can be found on stumps on the base of dead or dying trees such as oak, cherry, or beech throughout North America'
   },
   {
@@ -32,13 +32,13 @@ const mushrooms = [
   {
     name: 'Woodear',
     description: 'Woodear mushrooms have a delightful crunchy texture and a neutral taste so they are able to take on the full flavor of whatever dish you choose to add it into. They are popularly used in Asian cuisine and have a distinct cupped, ear-like shape usually with varying light to dark brown shades of coloration.',
-    img: "https://i.imgur.com/PWrRqM9.png",
+    img: "https://i.imgur.com/kNBzVLI.png",
     location: 'These mushrooms grow year round and can be found along riverbanks and and dead elderwood trees.'
   },
   {
     name: 'Porcini',
     description: 'The Porcini--also known as the penny bun--is a mushroom highlighted in many dishes of Italian and French cuisine. They are nutty, earthy and truly bring the definition of rich umami flavor to life. Porcinis have a brown cap with a spongy underside and a white stem and are most advised to be picked while they are still young.',
-    img: "https://i.imgur.com/3cb41w6.png",
+    img: "https://i.imgur.com/dD3cH98.png",
     location: 'Wild porcinis grow in small clusters around trees in wooded areas across Europe, Asia, and North America.'
   },
   {
@@ -50,7 +50,7 @@ const mushrooms = [
   {
     name:'Lion\'s Mane',
     description:'Lion\'s Mane mushrooms are quite the sight! With their long, shaggy hair-like appearance, they look as though a fancy wig suddenly started growing on a tree in the middle of the forest! They are widely revered for their anti-anxiety properties and are popular in traditional Chinese medicine. Their look is incredibly unique and you would definitely know if you stumbled upon one in a wooded area.',
-    img: "https://i.imgur.com/4PULdwJ.png",
+    img: "https://i.imgur.com/qbwqoHj.png",
     location: 'The Lion\'s Mane grows on dead logs in North America and Canada.'
   },
   {
