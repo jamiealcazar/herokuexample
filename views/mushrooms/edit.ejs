@@ -14,7 +14,7 @@
     <h1>See a mistake we made on our end? Edit this 'Shroom!</h1>
     <ul>
 
-      <form action="/mushrooms/<%=index%>?_method=PUT" method="POST">
+      <form action="/mushrooms/<%=mushroom.id%>?_method=PUT" method="POST">
       <input type="text" name="name" placeholder="Edit Name">
       <input type="text" name="description" placeholder="Edit Description">
       <input type="url" name="img" placeholder="Edit Image URL">

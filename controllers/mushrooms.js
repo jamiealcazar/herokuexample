@@ -10,9 +10,23 @@ const Seed = require('../models/seed.js')
 //___________________
 
 // Put
-
+router.put('/:id', (req, res)=>{
+    Mushrooms.findByIdAndUpdate(req.params.id, req.body, (err, updatedMushroom)=>{ //find the fruit
+      res.redirect('/mushrooms')
+  })
+})
 
 // Edit
+router.get('/:id/edit', (req, res)=>{
+    Mushrooms.findById(req.params.id, (err, foundMushroom)=>{ //find the fruit
+        res.render(
+    		'mushrooms/edit.ejs',
+    		{
+    			mushroom: foundMushroom
+    		}
+    	)
+    })
+})
 // app.get('/:id/edit', (req, res) => {
 //   // Mushrooms.findById(req.params.id, (error, data) => {
 //     res.render(
@@ -33,10 +47,7 @@ router.delete('/:id', (req, res) => {
     res.redirect('/mushrooms')
   })
 })
-// router.delete('/:id', (res, req) => {
-//   Mushrooms.splice(req.params.id, 1)
-//   res.redirect('/mushrooms')
-// })
+
 
 // New
 router.get('/new', (req, res) => {

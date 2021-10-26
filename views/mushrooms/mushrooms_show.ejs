@@ -25,7 +25,7 @@
     <form class="" action="/mushrooms/<%=mushroom.id%>?_method=DELETE" method="POST">
       <input type="submit" name="" value="DELETE">
     </form>
-    <h3><a href="/mushrooms/:<%=mushroom.id%>/edit">Edit Mushroom</a></h3>
+    <h3><a href="/mushrooms/<%=mushroom.id%>/edit">Edit Mushroom</a></h3>
     <h1><span><%=mushroom.name%></span></h1>
     <img src="<%=mushroom.img%>"/>
     <h2><span>Description: <%=mushroom.description%></span></h2>
