@@ -18,16 +18,18 @@
     <title></title>
   </head>
   <body>
+
     <h1><span>An Amateur's Guide to Popularly Foraged Fungi</span><h1>
+    <%JSON.stringify(mushroom)%>
     <h2><a href="/mushrooms"><span>Back to Main Menu</span></a></h2>
-    <form class="" action="/mushrooms/<%=mushrooms.id%>?_method=DELETE" method="POST">
+    <form class="" action="/mushrooms/<%=mushroom.id%>?_method=DELETE" method="POST">
       <input type="submit" name="" value="DELETE">
     </form>
-    <h3><a href="/mushrooms/:<%=mushrooms.id%>/edit">Edit Mushroom</a></h3>
-    <h1><span><%=mushrooms.name%></span></h1>
-    <img src="<%=mushrooms.img%>"/>
-    <h2><span>Description: <%=mushrooms.description%></span></h2>
-    <h2><span>Location: <%=mushrooms.location%></span></h2>
+    <h3><a href="/mushrooms/:<%=mushroom.id%>/edit">Edit Mushroom</a></h3>
+    <h1><span><%=mushroom.name%></span></h1>
+    <img src="<%=mushroom.img%>"/>
+    <h2><span>Description: <%=mushroom.description%></span></h2>
+    <h2><span>Location: <%=mushroom.location%></span></h2>
 
   </body>
 </html>

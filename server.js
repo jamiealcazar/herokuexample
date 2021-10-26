@@ -1,12 +1,9 @@
-//___________________
-//Dependencies
-//___________________
+// Dependencies
 const express = require('express');
-const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
+const methodOverride  = require('method-override');
 const app = express ();
 // const Mushrooms = require('./models/mushrooms.js');
-// const Recipes = require('./models/recipes.js');
 const db = mongoose.connection;
 require('dotenv').config()
 //___________________
@@ -46,7 +43,7 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 // Controllers
-const mushroomControllers = require('./controllers/mushrooms_controllers.js')
+const mushroomControllers = require('./controllers/mushrooms.js')
 app.use('/mushrooms', mushroomControllers)
 
 
