@@ -2,12 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/app.css">
+    <style type="text/css">
+      body {
+        background-color: lightblue;
+        text-align: center;
+      }
+      h1 {
+        text-decoration: underline;
+        font-style: italic;
+      }
+      img {
+        border-radius: 40%
+      }
+    </style>
     <title></title>
   </head>
   <body>
-    <h1><span>Add New Mushroom</span></h1>
+    <h2><span>Think We're Missing Something? Add a New Mushroom Here!</span></h2>
     <a href="/"><span>Main Menu</span></a>
+
     <form action="/mushrooms" method="POST">
         <input type="text" name="name" placeholder="Name"><br/>
         <input type="text" name="description" placeholder="Description"><br/>
