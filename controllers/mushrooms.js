@@ -11,14 +11,14 @@ const Seed = require('../models/seed.js')
 
 // Put
 router.put('/:id', (req, res)=>{
-    Mushrooms.findByIdAndUpdate(req.params.id, req.body, (err, updatedMushroom)=>{ //find the fruit
+    Mushrooms.findByIdAndUpdate(req.params.id, req.body, (err, updatedMushroom)=>{
       res.redirect('/mushrooms')
   })
 })
 
 // Edit
 router.get('/:id/edit', (req, res)=>{
-    Mushrooms.findById(req.params.id, (err, foundMushroom)=>{ //find the fruit
+    Mushrooms.findById(req.params.id, (err, foundMushroom)=>{ 
         res.render(
     		'mushrooms/edit.ejs',
     		{
@@ -27,17 +27,6 @@ router.get('/:id/edit', (req, res)=>{
     	)
     })
 })
-// app.get('/:id/edit', (req, res) => {
-//   // Mushrooms.findById(req.params.id, (error, data) => {
-//     res.render(
-//       'mushrooms/edit.ejs',
-//       {
-//         mushrooms: Mushrooms[req.params.id],
-//         index: req.params.id
-//       }
-//     )
-//   })
-// // })
 
 
 
