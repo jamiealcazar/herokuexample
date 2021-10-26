@@ -34,7 +34,7 @@ const Seed = require('../models/seed.js')
 // })
 
 // New
-router.get('/mushrooms/new', (req, res) => {
+router.get('/new', (req, res) => {
   res.render(
     'mushrooms/new.ejs'
   )
