@@ -28,7 +28,12 @@ const Seed = require('../models/seed.js')
 
 
 // Delete
-// app.delete('/:id', (res, req) => {
+router.delete('/:id', (req, res) => {
+  Mushrooms.findByIdAndRemove(req.params.id, (err, data) => {
+    res.redirect('/mushrooms')
+  })
+})
+// router.delete('/:id', (res, req) => {
 //   Mushrooms.splice(req.params.id, 1)
 //   res.redirect('/mushrooms')
 // })
@@ -73,13 +78,6 @@ router.get('/:id', (req, res) => {
 
 // Post
 router.post('/', (req, res) => {
-  // console.log(req.body);
-  // const newMushroom = {
-  //   name: req.body.name,
-  //   description: req.body.description,
-  //   img: req.body.img,
-  //   location: req.body.location
-  //   }
   Mushrooms.create(req.body, (error, createdMushroom) => {
   })
   // Mushrooms.push(newMushroom);
