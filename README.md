@@ -3,6 +3,8 @@
 
 *"Nature alone is antique, and the oldest art a mushroom." -Thomas Carlyle*
 
+Visit the app: https://shielded-waters-06877.herokuapp.com/mushrooms
+
 *Mycophile (noun)*
 <ol>
 <li>A person who likes to eat/cook mushrooms.</li>
@@ -20,7 +22,7 @@ In addition to their high nutritional value and commonplace usage in many loved 
 
 Today, modernized societies have advanced beyond our needs that we do not need to solely rely on hunting and gathering in order to sustain ourselves. However, the art of foraging is still a hobby and a way of life for many people around the world.
 
-Oh My Mycophile is a website designed to support the amateur mushroom forager by providing resources for safe mushroom foraging practices, common forageable mushrooms you can find in the wild, recipe suggestions for those different forageable mushrooms (MORE DETAILED RECIPE BOOK COMING SOON), and the historical contexts of mushrooms in food and ancient/modern day medicine (COMING SOON). 
+Oh My Mycophile is a website designed to support the amateur mushroom forager by providing resources for safe mushroom foraging practices, common forageable mushrooms you can find in the wild, recipe suggestions for those different forageable mushrooms (MORE DETAILED RECIPE BOOK COMING SOON), and the historical contexts of mushrooms in food and ancient/modern day medicine (COMING SOON).
 
 ## Technologies Used
 <ol>
