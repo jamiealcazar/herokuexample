@@ -5,24 +5,33 @@
     <title></title>
     <style type="text/css">
       body {
-        background-color: lightblue;
-        text-align: center
+        background-image: url("https://i.imgur.com/9pEfhl1.png");
+        text-align: center;
+        font-size: 25px;
+      }
+      h1 span {
+        border-radius: 10px;
+        background-color: white;
+      }
+      div span {
+        font-size: 30px
       }
     </style>
   </head>
   <body>
-    <h1>See a mistake we made on our end? Edit this 'Shroom!</h1>
-    <ul>
+    <h1><span>See a mistake we made on our end? Edit this 'Shroom!</span></h1>
+    <div><span>
+      <ul>
 
       <form action="/mushrooms/<%=mushroom.id%>?_method=PUT" method="POST">
-      <input type="text" name="name" placeholder="Edit Name">
-      <input type="text" name="description" placeholder="Edit Description">
-      <input type="url" name="img" placeholder="Edit Image URL">
-      <input type="text" name="location" placeholder="Edit Location">
-      <input type="submit" placeholder="Edit Mushroom">
-      </form>
 
-    </ul>
+      <input type="text" name="name" placeholder="Edit Name"><br/>
+      <input type="text" name="description" placeholder="Edit Description"><br/>
+      <input type="url" name="img" placeholder="Edit Image URL"><br/>
+      <input type="text" name="location" placeholder="Edit Location"><br/>
+      <input type="submit" placeholder="Edit Mushroom"><br/>
 
+      </ul>
+    </span></div>
   </body>
 </html>
