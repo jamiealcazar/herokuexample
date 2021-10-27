@@ -18,7 +18,7 @@ router.put('/:id', (req, res)=>{
 
 // Edit
 router.get('/:id/edit', (req, res)=>{
-    Mushrooms.findById(req.params.id, (err, foundMushroom)=>{ 
+    Mushrooms.findById(req.params.id, (err, foundMushroom)=>{
         res.render(
     		'mushrooms/edit.ejs',
     		{
